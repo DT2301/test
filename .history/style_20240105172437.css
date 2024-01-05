@@ -54,7 +54,7 @@ body {
 .card:hover {
   transform: rotate(-5deg);
 }
-.card.active .outside {
+.card:focus .outside {
   transform: rotateY(-130deg);
 }
 

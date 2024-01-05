@@ -1,0 +1,1 @@
+var cardActive = document.querySelector(".card")
