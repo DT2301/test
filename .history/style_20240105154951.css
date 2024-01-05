@@ -1,0 +1,50 @@
+body {
+    background-color: #87CEEB; /* Màu nền của trang */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.gift-box, #greeting-card {
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.gift-box {
+    background-color: #FFD700; /* Màu của hộp quà */
+    color: #333;
+}
+
+#balloons-fireworks {
+    display: none;
+    margin-top: 20px;
+}
+
+.balloon, .firework {
+    width: 20px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.balloon {
+    background-color: #FF69B4; /* Màu của bong bóng */
+    border-radius: 50% 50% 40% 40%;
+}
+
+.firework {
+    background-color: #FFA500; /* Màu của pháo hoa */
+    border-radius: 50%;
+}
+
+#greeting-card {
+    background-color: #228B22; /* Màu của thiệp chúc mừng */
+    color: #fff;
+}
+
+#card-content {
+    display: none;
+    background-color: #fff; /* Màu của nội dung trong thiệp */
+    padding: 20px;
+    margin-top: 20px;
+}

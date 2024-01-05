@@ -1,0 +1,83 @@
+@keyframes open-gift {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gift-box {
+  animation: open-gift 5s;
+}
+
+/* CSS cho thiệp */
+
+@keyframes open-card {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+#open-card:active + .card {
+  animation: open-card 0.5s linear;
+}
+
+/* CSS cho pháo hoa */
+
+@keyframes fireworks {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+  }
+}
+
+.fireworks {
+  position: absolute;
+  animation: fireworks 5s ease-out;
+}
+
+/* CSS cho bong bóng */
+
+@keyframes bubbles {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+.bubble {
+  position: absolute;
+  animation: bubbles 5s ease-in;
+}
+/* CSS cho màn hình điện thoại */
+
+@media (max-width: 600px) {
+  .gift-box {
+    width: 150px;
+    height: 100px;
+  }
+
+  .card {
+    width: 100px;
+    height: 75px;
+  }
+
+  .message {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+}

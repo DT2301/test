@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chúc Mừng Sinh Nhật!</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Chúc Mừng Sinh Nhật!</h1>
+  </header>
+
+  <main>
+
+    <section class="gift">
+      <div class="gift__box" onclick="handleOpenGift()">
+        Click để mở quà!  
+      </div>
+    </section>
+
+    <section id="balloons-fireworks">
+      <div class="balloon"></div>
+      
+      <div class="firework"></div>
+      
+      <div class="text">Happy Birthday!</div>
+    </section>
+
+    <section class="card">
+      <div class="card__cover" onclick="handleOpenCard()">
+        Click để mở thiệp!
+      </div>
+
+      <div id="card-content">
+        <p>Chúc mừng sinh nhật!</p>
+        
+        <button>Gửi lời chúc</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Phần pop-up -->
+  <div class="popup" id="gift-popup">
+    <div class="popup-content">
+      <h2>Chúc Mừng Sinh Nhật!</h2>
+      
+      <p>Chúc bạn sinh nhật thật vui vẻ bên gia đình và bạn bè!</p>
+      
+      <button id="close-popup">Đóng</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Birthday Wishes</p>
+  </footer>
+
+</body>
+
+</html>

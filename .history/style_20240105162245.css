@@ -1,0 +1,15 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+
+body{
+    background-color: #fdbf00;
+}
+
+.card {
+    border: 1px solid white;
+    width: 640px;
+}

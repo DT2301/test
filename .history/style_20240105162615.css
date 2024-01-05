@@ -1,0 +1,44 @@
+*{
+    padding:  0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+
+body{
+    background-color: #fdbf00;
+}
+
+.card {
+    border: 1px solid white;
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.outside, .inside{
+    border: 1px solid black;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.inside {
+    left: 50.1%;
+}
+
+.front,.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
